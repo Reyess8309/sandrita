@@ -9,10 +9,15 @@
     <title>Flowers</title>
 </head>
 <body>
-    <audio controls autoplay>
+    <audio id="song" autoplay>
          <source src="music/SomewhereOnlyWeKnow.mp3" type="audio/mpeg">
          tu navegador no es como mpatiboe con html5
     </audio>
+    <script>
+        window.addeventlistener('click', () =>{
+            document.getelementbyid("song").play();
+        })
+    </script>
     <div class="greetings">
     <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
         <span>I</span>
